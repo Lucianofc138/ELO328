@@ -15,8 +15,11 @@ el programa es capaz de agregar un marco a la imagen o video de un color definid
 ## Enunciado
 
 Escriba un programa que cumpla con la siguiente descripcion:
-    ./GAMMA [-m1 | -m2] -v gamma [-f x y w h] [-c r g b]
-    ./GAMMA [-m1 | -m2] -i imagen gamma [-f x y w h] [-c r g b]
+```
+    $ ./GAMMA [-m1 | -m2] -v gamma [-f x y w h] [-c r g b]
+    $ ./GAMMA [-m1 | -m2] -i imagen gamma [-f x y w h] [-c r g b]
+```
+```
     -v:    usar webcam.
     -i:    usar imagen.
     image: Ruta de imagen a procesar.
@@ -24,7 +27,7 @@ Escriba un programa que cumpla con la siguiente descripcion:
     -f:    (Optional) Define  ́area a la que aplica gamma. Resto es borde.Se define rectángulo posicion (x,y) y tamaño w X h.
             Si no se define, se usa imagen completa.
     -c:    (Optional) Color (r,g,b) del borde. Si no se define,se usa negro.
-
+```
 ## Instrucciones
 
 Para compilar desde el terminal, utilizando simbolos para debugger, en el directorio raiz del proyecto
@@ -50,13 +53,15 @@ Para correr en modo webcam:
 ```
     $ ./bin/GAMMA [-m1|-m2] -v gamma
 ```
+gamma es un valor numerico mayor a 0, ej: 0.5.
 
-gamma es un valor numerico mayor a 0, ej: 0.5
-ES IMPORTANTE EJECUTAR DESDE EL DIRECTORIO RAIZ POR LA DIRECCION RELATIVA DE LAS IMAGENES
+ES IMPORTANTE EJECUTAR DESDE EL DIRECTORIO RAIZ POR LA DIRECCION RELATIVA DE LAS IMAGENES.
 
 Adicionalmente en cualquier modo se puede agregar un marco:
+```
     dimensiones: -f x y w h 
     color:       -c r g b
+```
 
 Dos ejemplos serían:
 ```
