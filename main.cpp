@@ -68,7 +68,7 @@ int imageProgramRoutine(int argc, char** argv, int imageTokenPosition) {//------
 
 
         int border[4] = {0, 0, image.cols, image.rows};
-        int edgeColorBGR[3] = {200, 100, 200};
+        int edgeColorBGR[3] = {0};
         int gammaArray[MAX_BYTE];
         int mode = getModeFromArgs(argv, argc);
         double gamma = getGammaFromArgs(true, imageTokenPosition, argv, argc);

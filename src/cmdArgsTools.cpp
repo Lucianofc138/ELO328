@@ -74,13 +74,13 @@ int setBorderFromArgs(int border[], int imageWidth, int imageHeight, char** argv
     }
 }
 
-int setBorderColorFromArgs(int frameColorRGB[], char** argv, int argc) {
+int setBorderColorFromArgs(int frameColorBGR[], char** argv, int argc) {
     int colorTokenPosition = getArgPosition("-c", argv, argc);
     std::cout << "Getting color data..." << std::endl;
 
     if (colorTokenPosition != -1) {
         for (int idx=0; idx<3; idx++)
-            frameColorRGB[idx] = atoi(argv[colorTokenPosition+idx+1]);
+            frameColorBGR[idx] = atoi(argv[colorTokenPosition+3-idx]);
         return 0;
     }
     else{

@@ -6,6 +6,25 @@ En esta tarea participaron: Luciano Flores
                             Agustín Acevedo
                             Martín Miranda
 
+## Descripcion
+
+El objetivo del programa es realizar correción gamma en una imagen fija de la carpeta samples o de la webcam
+en tiempo real. Además, esto se puede hacer calculando pixel a pixel o con una tabla precalculada. Por último
+el programa es capaz de agregar un marco a la imagen o video de un color definido segun sus parametros RGB
+
+## Enunciado
+
+Escriba un programa que cumpla con la siguiente descripcion:
+    ./GAMMA [-m1 | -m2] -v gamma [-f x y w h] [-c r g b]
+    ./GAMMA [-m1 | -m2] -i imagen gamma [-f x y w h] [-c r g b]
+    -v:    usar webcam.
+    -i:    usar imagen.
+    image: Ruta de imagen a procesar.
+    gamma: Nivel de Gamma. Debe ser un valor real, mayor que 0.
+    -f:    (Optional) Define  ́area a la que aplica gamma. Resto es borde.Se define rectángulo posicion (x,y) y tamaño w X h.
+            Si no se define, se usa imagen completa.
+    -c:    (Optional) Color (r,g,b) del borde. Si no se define,se usa negro.
+
 ## Instrucciones
 
 Para compilar desde el terminal, utilizando simbolos para debugger, en el directorio raiz del proyecto
@@ -41,8 +60,8 @@ Adicionalmente en cualquier modo se puede agregar un marco:
 
 Dos ejemplos serían:
 ```
-   $ ./bin/GAMMA -m2 -i ./samples/sample0.jpg, 0.8, -f 200 100 880 687
-   $ ./bin/GAMMA -m1 -v 1.2, -f 200 100 880 687 -c 100 200 50
+   $ ./bin/GAMMA -m2 -i ./samples/sample0.jpg, 0.8 -f 200 100 880 687
+   $ ./bin/GAMMA -m1 -v 1.2 -f 200 100 880 687 -c 100 200 50
 ```
 
 
