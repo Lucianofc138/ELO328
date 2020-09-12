@@ -24,7 +24,7 @@ Para compilar de manera normal, desde el directorio raiz ejecutar:
 
 Para correr en modo imagen:  
 ```
-    $ ./bin/GAMMA [-m1|-m2] -i ./samples/sample0.jpg, gamma
+    $ ./bin/GAMMA [-m1|-m2] -i ./samples/sample0.jpg gamma
 ```
 
 Para correr en modo webcam:
