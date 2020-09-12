@@ -24,7 +24,8 @@ Escriba un programa que cumpla con la siguiente descripcion:
     -i:    usar imagen.
     image: Ruta de imagen a procesar.
     gamma: Nivel de Gamma. Debe ser un valor real, mayor que 0.
-    -f:    (Optional) Define  ́area a la que aplica gamma. Resto es borde.Se define rectángulo posicion (x,y) y tamaño w X h.
+    -f:    (Optional) Define  ́area a la que aplica gamma. Resto es borde.
+            Se define rectángulo posicion (x,y) y tamaño w X h.
             Si no se define, se usa imagen completa.
     -c:    (Optional) Color (r,g,b) del borde. Si no se define,se usa negro.
 ```
